@@ -71,7 +71,7 @@
 
 <style lang="scss">
   .gift-wrap {
-    padding: 5rem 2rem;
+    padding: 42px 20px;
     background-color: #f7f7f7;
   }
 
@@ -97,7 +97,6 @@
 
   .btn-reservation {
     width: 100%;
-    font-family: 'NanumGothic';
     font-size: 13px;
     color: #fff;
     margin-top: 5px;
@@ -117,7 +116,7 @@
   }
 
   .sub-content {
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 20px;
   }
 
@@ -128,20 +127,29 @@
   }
 </style>
 
-<div class="section gift-wrap">
+<div id="id-gift" class="section gift-wrap">
   <div class="grid">
     <p class="sub-title align-center">선물 예약하기</p>
     <p class="sub-content align-center">
-      저희에게 특별한 선물을 준비하려고 고민하실 분들을 위해
+      저희에게 특별한 선물을
       <br />
-      저희가 앞으로 살아나가는 데에 필요할 만한 것들을 정리해 보았습니다.
+      준비하려고 고민하실 분들을 위해
+      <br />
+      저희가 앞으로 살아나가는 데에
+      <br />
+      필요할 만한 것들을 정리해 보았습니다.
+      <br />
       <br />
       정성을 가득 담아 보내주신 선물은
       <br />
-      항상 감사한 마음을 잃지 않고 소중히 다루어 사용하겠습니다.
+      항상 감사한 마음을 잃지 않고
+      <br />
+      소중히 다루어 사용하겠습니다.
       <br />
       <br />
-      소셜 계정으로 로그인하여 애정어린 한마디와 함께 선물을 예약해 주세요.
+      소셜 계정으로 로그인하여 애정어린 한마디와 함께
+      <br />
+      선물을 예약해 주세요.
     </p>
     {#each gifts as gift, idx}
       <div class={`gift-list gift-${idx + 1}`}>

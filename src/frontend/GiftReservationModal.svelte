@@ -19,7 +19,7 @@
     position: fixed;
     left: 50%;
     top: 50%;
-    z-index: 5;
+    z-index: 9;
     width: 80%;
     transform: translate(-50%, -50%);
     padding: 20px;
@@ -51,7 +51,6 @@
       width: 80px;
       height: 35px;
       line-height: 35px;
-      font-family: 'NanumGothic';
       font-size: 13px;
       color: #fff;
       margin: 15px auto 0;
@@ -65,7 +64,7 @@
   <div class="modal" slot="modal">
     <h1 class="align-center">소중한 한마디와 함께 선물을 예약해 주세요.</h1>
     <h1 class="align-center">
-       {$user.name} 님께서 선물해 주신 {gift.name}은(는)
+      {$user.name} 님께서 선물해 주신 {gift.name}은(는)
       <br />
       항상 감사한 마음으로 사용하겠습니다.
     </h1>

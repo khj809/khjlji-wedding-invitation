@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Gamja+Flower&display=swap&subset=korean');
 
 html,
 body,
@@ -71,7 +72,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  font-family: 'NanumMyeongjo';
+  font-family: 'Gamja Flower', cursive;
   font-size: inherit;
   text-decoration: none;
   letter-spacing: inherit;
@@ -92,7 +93,7 @@ button {
   display: inline-block;
   margin: 0;
   padding: 0;
-  font-family: 'NanumMyeongjo';
+  font-family: 'Gamja Flower', cursive;
   border: 0;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
@@ -129,13 +130,9 @@ th {
   text-align: inherit;
 }
 
-strong {
-  display: block;
-}
-
 input {
   width: 100%;
-  font-family: 'NanumMyeongjo';
+  font-family: 'Gamja Flower', cursive;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -163,22 +160,25 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+  /* scroll-behavior: smooth; */
   font-size: 10px;
   font-weight: 500;
 }
 
 body {
   position: relative;
+  min-width: 280px;
   min-height: 100%;
   height: 100%;
   overflow-y: auto;
-  font-family: 'NanumMyeongjo';
+  font-family: 'Gamja Flower', cursive;
   color: #000;
   text-align: left;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
   background-color: #fff;
+  /* scroll-behavior: smooth; */
 }
 
 body.scroll-lock {
@@ -188,7 +188,7 @@ body.scroll-lock {
 /* Common */
 
 .grid {
-  width: 790px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -203,6 +203,10 @@ body.scroll-lock {
 
 .align-right {
   text-align: right;
+}
+
+.ls-tablet {
+  display: none;
 }
 
 .ls-mobile {
@@ -226,7 +230,7 @@ body.scroll-lock {
 
 .sub-title {
   position: relative;
-  font-size: 13px;
+  font-size: 15px;
   padding-top: 10px;
   margin-bottom: 20px;
 }
@@ -240,7 +244,7 @@ body.scroll-lock {
   width: 50px;
   height: 1px;
   margin-left: -25px;
-  background-color: #073c35;
+  background-color: #000;
 }
 
 .default-position-style-top-center {
@@ -250,7 +254,7 @@ body.scroll-lock {
 
 .notification.default-notification-style {
   width: 100%;
-  font-family: 'NanumGothic';
+  font-family: 'Gamja Flower', cursive;
   font-size: 15px !important;
   text-align: center !important;
   margin: 12px 0;
@@ -262,7 +266,7 @@ body.scroll-lock {
 
 @media (max-width: 1200px) {
   .grid {
-    width: 600px;
+    width: 769px;
     margin: 0 auto;
   }
 }
@@ -272,6 +276,10 @@ body.scroll-lock {
   body {
     font-size: 8px;
   }
+
+  .ls-tablet {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
@@ -279,9 +287,11 @@ body.scroll-lock {
   body {
     font-size: 6px;
   }
+
   .grid {
     width: 100%;
   }
+
   .ls-mobile {
     display: block;
   }

@@ -1,5 +1,68 @@
 <script>
+  import { onMount } from 'svelte';
   let burger;
+  let gnb;
+
+  onMount(() => {
+    gnb.querySelectorAll('li>a').forEach(el => {
+      el.onclick = e => {
+        e.preventDefault(); // <=== Don't follow the link
+        smoothScroll(el.hash.substring(1), 300);
+      };
+    });
+  });
+
+  function currentYPosition() {
+    // Firefox, Chrome, Opera, Safari
+    if (self.pageYOffset) return self.pageYOffset;
+    // Internet Explorer 6 - standards mode
+    if (document.documentElement && document.documentElement.scrollTop)
+      return document.documentElement.scrollTop;
+    // Internet Explorer 6, 7 and 8
+    if (document.body.scrollTop) return document.body.scrollTop;
+    return 0;
+  }
+
+  function elmYPosition(eID) {
+    var elm = document.getElementById(eID);
+    var y = elm.offsetTop;
+    var node = elm;
+    while (node.offsetParent && node.offsetParent != document.body) {
+      node = node.offsetParent;
+      y += node.offsetTop;
+    }
+    return y;
+  }
+
+  function smoothScroll(eID) {
+    var startY = currentYPosition();
+    var stopY = elmYPosition(eID);
+    var distance = stopY > startY ? stopY - startY : startY - stopY;
+    if (distance < 100) {
+      scrollTo(0, stopY);
+      return;
+    }
+    var speed = Math.round(distance / 100);
+    if (speed >= 20) speed = 20;
+    var step = Math.round(distance / 25);
+    var leapY = stopY > startY ? startY + step : startY - step;
+    var timer = 0;
+    if (stopY > startY) {
+      for (var i = startY; i < stopY; i += step) {
+        setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
+        leapY += step;
+        if (leapY > stopY) leapY = stopY;
+        timer++;
+      }
+      return;
+    }
+    for (var i = startY; i > stopY; i -= step) {
+      setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
+      leapY -= step;
+      if (leapY < stopY) leapY = stopY;
+      timer++;
+    }
+  }
 </script>
 
 <style lang="scss">
@@ -7,8 +70,8 @@
     position: relative;
     width: 100%;
     height: 50vw;
-    font-family: 'Chalisa Octavia';
-    background: url('/assets/images/ogImage.jpg') no-repeat;
+    background: url('https://doc-0k-18-docs.googleusercontent.com/docs/securesc/gpe3alp7oinmqheeblio72bbhj2lulom/siifs5ial1cg7jsv05gugo6evvph1b98/1563084000000/07129713942040047864/03484629860629133702/1IaoUHWlkFUc5ohTCr-FzpbOSnPJjS8H6')
+      no-repeat;
     background-position: 50% 90%;
     background-size: cover;
     animation: fadein 0.5s ease-in;
@@ -31,13 +94,13 @@
     position: relative;
     z-index: 2;
     display: table;
-    width: 400px;
+    width: 100%;
     height: 100%;
-    text-align: center;
     > h1 {
       display: table-cell;
       vertical-align: middle;
-      font-size: 6rem;
+      font-family: 'Coming Soon', cursive;
+      font-size: 5rem;
       font-weight: 400;
       text-shadow: 1px 1px 1px #000;
       letter-spacing: 5px;
@@ -61,21 +124,10 @@
       background-position: 50% 50%;
     }
     .title-area {
-      width: 280px;
-      > h1 {
-        display: block;
-        margin-top: 15px;
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    .title-area {
-      width: 200px;
       > h1 {
         display: block;
         font-size: 5vh;
-        margin-top: 5vh;
+        margin-top: 4vh;
       }
     }
   }
@@ -112,22 +164,73 @@
       transform: translate3d(0, 0, 0);
     }
   }
+
+  .gnb {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+    width: 100%;
+    background-color: transparent;
+    transition: 0.5s;
+    > li {
+      width: 100%;
+      padding: 10px 5px;
+      > a {
+        display: block;
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+
+    :global(&.theme-dark) {
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.55);
+      transition: 0.5s;
+      > li {
+        > a {
+          color: #fff;
+        }
+      }
+    }
+  }
 </style>
 
 <header>
-  <div class="grid title-area">
+  <div class="grid title-area align-center">
     <h1>
       <p class="lim">
-        Lim
-        <br class="ls-mobile" />
-        Jeongim
+        LIM
+        <br class="ls-tablet" />
+        JEONGIM
       </p>
       <div class="mid-line">&</div>
       <p class="kim">
-        Kim
-        <br class="ls-mobile" />
-        Haejoon
+        KIM
+        <br class="ls-tablet" />
+        HAEJOON
       </p>
     </h1>
   </div>
 </header>
+
+<div class="gnb-wrap">
+  <ul class="gnb flex" bind:this={gnb}>
+    <li>
+      <a href="#id-information">연락처</a>
+    </li>
+    <li>
+      <a href="#id-gallery">사진첩</a>
+    </li>
+    <li>
+      <a href="#id-gift">선물예약</a>
+    </li>
+    <li>
+      <a href="#id-map">오시는길</a>
+    </li>
+    <li>
+      <a href="#id-comment">댓글달기</a>
+    </li>
+  </ul>
+</div>

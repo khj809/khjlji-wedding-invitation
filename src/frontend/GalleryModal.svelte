@@ -33,7 +33,7 @@
     position: fixed;
     left: 50%;
     top: 50%;
-    z-index: 5;
+    z-index: 8;
     width: 90%;
     transform: translate(-50%, -50%);
     border-radius: 0.2em;
@@ -49,7 +49,7 @@
     max-width: 768px;
     justify-content: space-between;
     padding: 20px;
-    z-index: 6;
+    z-index: 9;
 
     > h2,
     > button {

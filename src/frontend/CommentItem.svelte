@@ -11,8 +11,7 @@
 
 <style lang="scss">
   .comment-list {
-    font-family: 'NanumGothic';
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.5;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -24,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     h5 {
-      font-size: 12px;
+      font-size: 15px;
       > i {
         display: inline-block;
         vertical-align: middle;
@@ -49,7 +48,7 @@
       }
     }
     span {
-      font-size: 10px;
+      font-size: 13px;
     }
   }
 
@@ -60,14 +59,13 @@
     margin-top: 10px;
     > p {
       width: calc(100% - 30px);
-      font-size: 12px;
+      font-size: 15px;
       line-height: 1.5;
       white-space: pre-wrap;
     }
     > .btn-delete {
       width: 30px;
-      font-family: 'NanumGothic';
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1.5;
       cursor: pointer;
     }
@@ -78,7 +76,7 @@
   <div class="list-header">
     <h5>
       <i class={data.user.provider} />
-       {data.user.name}
+      {data.user.name}
     </h5>
     <span>{createdAt}</span>
   </div>

@@ -110,8 +110,7 @@
   }
 
   .login-name {
-    font-family: 'NanumGothic';
-    font-size: 13px;
+    font-size: 15px;
     text-align: left;
     margin-bottom: 10px;
     > i {
@@ -145,8 +144,8 @@
     > textarea,
     > input {
       max-height: 100px;
-      font-family: 'NanumGothic';
-      font-size: 13px;
+      font-family: 'Gamja Flower', cursive;
+      font-size: 15px;
       line-height: 1.5;
       padding: 5px 10px;
       border: 1px solid #073c35;
@@ -168,13 +167,13 @@
   }
 </style>
 
-<div class="section comment-wrap">
+<div id="id-comment" class="section comment-wrap">
   <div class="grid padding">
     <form on:submit|preventDefault={handleSubmit}>
       {#if !!$user}
         <h5 class="login-name">
           <i class={$user.provider} />
-           {$user.name}
+          {$user.name}
         </h5>
       {/if}
 

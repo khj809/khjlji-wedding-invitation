@@ -1,20 +1,39 @@
 <style lang="scss">
+  .info-wrap {
+    padding-top: 42px;
+  }
+
   .ic {
     &-bride,
     &-groom {
-      display: inline-block;
-      vertical-align: middle;
-      width: 40px;
-      height: 40px;
+      display: block;
+      width: 30vw;
+      min-width: 90px;
+      max-width: 150px;
+      height: 30vw;
+      min-height: 90px;
+      max-height: 150px;
+      margin: 0 auto;
+      border-radius: 50%;
       background-repeat: no-repeat;
-      background-size: cover;
-    }
-    &-groom {
-      background-image: url('/assets/images/ic-groom.png');
+      background-image: url('https://doc-0k-18-docs.googleusercontent.com/docs/securesc/gpe3alp7oinmqheeblio72bbhj2lulom/siifs5ial1cg7jsv05gugo6evvph1b98/1563084000000/07129713942040047864/03484629860629133702/1IaoUHWlkFUc5ohTCr-FzpbOSnPJjS8H6');
     }
     &-bride {
-      background-image: url('/assets/images/ic-bride.png');
+      background-position: 62% 45%;
     }
+    &-groom {
+      background-position: 36% 42%;
+    }
+    &-rings {
+      width: 15vw;
+      height: 15vw;
+      min-width: 42px;
+      min-height: 42px;
+      max-width: 60px;
+      max-height: 60px;
+      margin-top: -70px;
+    }
+
     &-call,
     &-message {
       display: inline-block;
@@ -27,32 +46,44 @@
     }
   }
 
-  .name {
-    font-size: 15px;
-    font-weight: bold;
-    > em {
-      font-size: 13px;
-      font-weight: normal;
-      margin-right: 5px;
-    }
-  }
-
   .couple {
-    .tel-wrap {
-      padding: 0 2rem;
-      box-sizing: border-box;
+    margin-bottom: 42px;
+    .couple-info {
+      padding: 0 20px;
       > div {
-        width: 50%;
-        margin: 0.8rem 0;
+        width: 40%;
+        &:nth-of-type(2) {
+          width: 20%;
+        }
       }
+    }
+
+    .relation {
+      margin-top: 20px;
+      justify-content: space-around;
+      align-items: center;
+      span {
+        font-size: 13px;
+      }
+      strong {
+        font-size: 15px;
+      }
+      .relation-parents {
+        > span {
+          display: block;
+        }
+      }
+    }
+
+    .tel-wrap {
+      margin-top: 10px;
     }
   }
 
   .parents {
-    margin-top: 5rem;
     background-color: #f7f7f7;
     > .flex {
-      padding: 5rem 2rem;
+      padding: 42px 20px;
       box-sizing: border-box;
       > div {
         width: 50%;
@@ -60,7 +91,7 @@
     }
 
     .parent-title {
-      font-size: 13px;
+      font-size: 15px;
       text-align: center;
       color: #333;
       margin-bottom: 3rem;
@@ -79,52 +110,82 @@
       }
       .name {
         display: inline-block;
-        font-size: 13px;
+        font-size: 15px;
+        font-weight: bold;
         margin-bottom: 1rem;
         > em {
-          font-size: 10px;
+          font-size: 13px;
+          font-weight: normal;
+          margin-right: 5px;
         }
       }
     }
   }
 </style>
 
-<div class="info-wrap">
+<div id="id-information" class="info-wrap">
   <!-- 신부, 신랑 연락처 -->
   <div class="section couple">
     <div class="grid">
-      <div class="tel-wrap flex">
-        <div>
-          <i class="ic-bride" />
-          <span class="name">
-            <em>신부</em>
-            임정임
-          </span>
+      <p class="sub-title align-center">연락처</p>
+      <div class="couple-info flex">
+        <!-- 신부 -->
+        <div class="brider-wrap align-center">
+          <div>
+            <i class="ic-bride" />
+          </div>
+          <div class="relation flex">
+            <div class="relation-parents">
+              <span>우지순</span>
+              <span>임종구</span>
+            </div>
+            <span>
+              의 장녀
+              <strong>정임</strong>
+            </span>
+          </div>
+          <div class="tel-wrap">
+            <a href="tel:010-7378-2407" class="ic-call">
+              <img src="/assets/images/ic-call.png" alt="신부에게 전화하기" />
+            </a>
+            <a href="sms:010-7378-2407" class="ic-message">
+              <img
+                src="/assets/images/ic-message.png"
+                alt="신부에게 문자하기" />
+            </a>
+          </div>
         </div>
-        <div class="align-right">
-          <a href="tel:010-7378-2407" class="ic-call">
-            <img src="/assets/images/ic-call.png" alt="신부에게 전화하기" />
-          </a>
-          <a href="sms:010-7378-2407" class="ic-message">
-            <img src="/assets/images/ic-message.png" alt="신부에게 문자하기" />
-          </a>
+        <div class="align-center">
+          <img
+            class="ic-rings"
+            src="/assets/images/ic-rings.png"
+            alt="웨딩반지" />
         </div>
-      </div>
-      <div class="tel-wrap flex">
-        <div>
-          <i class="ic-groom" />
-          <span class="name">
-            <em>신랑</em>
-            김해준
-          </span>
-        </div>
-        <div class="align-right">
-          <a href="tel:010-2710-0109" class="ic-call">
-            <img src="/assets/images/ic-call.png" alt="신랑에게 전화하기" />
-          </a>
-          <a href="sms:010-2710-0109" class="ic-message">
-            <img src="/assets/images/ic-message.png" alt="신랑에게 문자하기" />
-          </a>
+        <!-- 신랑 -->
+        <div class="groom-wrap align-center">
+          <div>
+            <i class="ic-groom" />
+          </div>
+          <div class="relation flex">
+            <div class="relation-parents">
+              <span>박명숙</span>
+              <span>김정수</span>
+            </div>
+            <span>
+              의 장남
+              <strong>해준</strong>
+            </span>
+          </div>
+          <div class="tel-wrap">
+            <a href="tel:010-2710-0109" class="ic-call">
+              <img src="/assets/images/ic-call.png" alt="신랑에게 전화하기" />
+            </a>
+            <a href="sms:010-2710-0109" class="ic-message">
+              <img
+                src="/assets/images/ic-message.png"
+                alt="신랑에게 문자하기" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
