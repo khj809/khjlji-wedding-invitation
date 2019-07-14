@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NaverLoginSDK</title>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js"
+      charset="utf-8"
+    ></script>
+
+    <script>
+      window.onload = () => {
+        if (!!window.opener && !!window.opener.onNaverSignIn) {
+          window.close();
+          window.opener.onNaverSignIn(window.location.hash);
+        } else {
+          window.location.replace('/');
+        }
+      };
+    </script>
+  </body>
+</html>

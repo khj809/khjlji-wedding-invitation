@@ -1,0 +1,41 @@
+{
+  "name": "wedding-invitation",
+  "version": "1.0.0",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.10.1",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^2.12.0"
+  },
+  "scripts": {
+    "dev:client": "NODE_ENV=development rollup -c -w",
+    "dev:server": "NODE_ENV=development nodemon src/index.js",
+    "dev": "run-p dev:client dev:server",
+    "build": "NODE_ENV=production rollup -c",
+    "start": "NODE_ENV=production node src/index.js"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.4.2",
+    "apollo-server-express": "^2.6.4",
+    "body-parser": "^1.19.0",
+    "dayjs": "^1.8.14",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "graphql": "^14.3.1",
+    "host-validation": "^2.0.1",
+    "prisma-client-lib": "^1.34.0",
+    "siema": "^1.5.1",
+    "svelte-notifications": "^0.9.7",
+    "telebot": "^1.2.6"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}

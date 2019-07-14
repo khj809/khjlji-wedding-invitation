@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'NanumGothic';
+  font-weight: 500;
+  src: local('NanumGothic'), local('Nanum Gothic'), local('Nanum-Gothic'),
+    url('./assets/fonts/NanumGothic.otf') format('opentype'),
+    url('./assets/fonts/NanumGothic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-weight: 500;
+  src: local('NanumMyeongjo'), local('Nanum Myeongjo'), local('Nanum-Myeongjo'),
+    url('./assets/fonts/NanumMyeongjo.otf') format('opentype'),
+    url('./assets/fonts/NanumMyeongjo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chalisa Octavia';
+  font-weight: 500;
+  src: local('Chalisa_Octavia'), local('Chalisa Octavia'),
+    url('./assets/fonts/Chalisa_Octavia.otf') format('opentype');
+}

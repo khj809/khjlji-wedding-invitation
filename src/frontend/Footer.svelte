@@ -1,0 +1,61 @@
+<style lang="scss">
+  .footer-wrap {
+    padding: 20px;
+    background-color: #073c35;
+
+    .position {
+      position: relative;
+    }
+
+    .thankyou {
+      font-family: 'Chalisa Octavia';
+      font-size: 22px;
+      text-align: center;
+      line-height: 1.5;
+      color: #fff;
+    }
+
+    .copyright {
+      display: block;
+      font-family: 'NanumGothic';
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.5;
+      color: #fff;
+    }
+
+    .github {
+      position: absolute;
+      right: 0;
+      animation: dongdong 0.5s 1s infinite linear alternate;
+      > a {
+        display: block;
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+
+  @keyframes dongdong {
+    0% {
+      top: -5px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+</style>
+
+<div class="footer-wrap">
+  <div class="grid position">
+    <p class="thankyou">Thank you</p>
+    <div class="github">
+      <a href="https://github.com/khj809/wedding-invitation">
+        <img src="/assets/images/ic-github.png" alt="github" />
+      </a>
+    </div>
+    <small class="copyright">
+      © 2019 Jeongim & Haejoon. All Rights Reserved.
+    </small>
+  </div>
+</div>

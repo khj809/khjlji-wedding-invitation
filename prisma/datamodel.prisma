@@ -1,0 +1,26 @@
+type User {
+  id: ID! @id
+  key: String! @unique
+  provider: String!
+  name: String!
+}
+type Comment {
+  id: ID! @id
+  user: User! @relation(link: TABLE)
+  text: String!
+  createdAt: DateTime @createdAt
+}
+type Gift {
+  id: ID! @id
+  name: String!
+  image: String!
+  link: String!
+  reservation: Reservation
+}
+type Reservation {
+  id: ID! @id
+  gift: Gift! @relation(link: TABLE)
+  user: User! @relation(link: TABLE)
+  text: String!
+  createdAt: DateTime @createdAt
+}
