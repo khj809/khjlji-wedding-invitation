@@ -39,8 +39,7 @@
 
 <style lang="scss">
   .gallery {
-    margin: 5rem 0;
-    padding: 0 2rem;
+    padding: 42px 20px;
   }
 
   .photo-wrap {
@@ -65,7 +64,7 @@
   }
 </style>
 
-<div class="section gallery-wrap">
+<div id="id-gallery" class="section gallery-wrap">
   <div class="grid">
     <div class="gallery">
       <p class="sub-title align-center">사진첩</p>

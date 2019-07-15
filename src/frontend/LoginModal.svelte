@@ -10,7 +10,7 @@
     position: fixed;
     left: 50%;
     top: 50%;
-    z-index: 5;
+    z-index: 9;
     width: 80%;
     max-width: 400px;
     min-width: 200px;
@@ -21,7 +21,6 @@
       display: block;
       width: 100%;
       font-size: 13px;
-      font-family: 'NanumGothic';
       text-align: left;
       margin: 0 auto 20px;
       padding: 15px 20px 15px 50px;

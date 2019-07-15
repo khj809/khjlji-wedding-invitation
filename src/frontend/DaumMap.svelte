@@ -38,8 +38,7 @@
 
 <style lang="scss">
   .contact-wrap {
-    margin: 5rem 0;
-    padding: 0 2rem;
+    padding: 42px 20px;
   }
 
   .map {
@@ -48,7 +47,7 @@
   }
 
   .map-title {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     line-height: 2;
     margin-top: 10px;
@@ -58,7 +57,7 @@
   }
 
   .map-list {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
   }
 
@@ -69,7 +68,7 @@
     margin-bottom: 20px;
 
     .info-hall {
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.5;
       > a {
         text-decoration: underline;
@@ -95,7 +94,7 @@
   }
 </style>
 
-<div class="section">
+<div id="id-map" class="section">
   <div class="grid">
     <div class="contact-wrap">
       <p class="sub-title align-center">오시는 길</p>

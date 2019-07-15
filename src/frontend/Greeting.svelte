@@ -4,9 +4,9 @@
 
 <style lang="scss">
   .invitation-wrap {
-    margin-top: 5rem;
+    margin: 42px 0;
     p {
-      font-size: 13px;
+      font-size: 15px;
     }
     .info-wedding {
       line-height: 2;
@@ -18,14 +18,13 @@
   }
 
   .greeting-text {
+    font-size: 15px;
     line-height: 2;
-    font-size: 13px;
-    margin: 5rem 0;
-    padding: 5rem 2rem;
+    padding: 42px 20px;
   }
 </style>
 
-<div class="section invitation-wrap">
+<div id="id-greeting" class="section invitation-wrap">
   <div class="grid">
     <p class="sub-title align-center">초대합니다</p>
     <p class="info-wedding align-center">
