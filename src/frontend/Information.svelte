@@ -16,7 +16,7 @@
       margin: 0 auto;
       border-radius: 50%;
       background-repeat: no-repeat;
-      background-image: url('https://doc-0k-18-docs.googleusercontent.com/docs/securesc/gpe3alp7oinmqheeblio72bbhj2lulom/siifs5ial1cg7jsv05gugo6evvph1b98/1563084000000/07129713942040047864/03484629860629133702/1IaoUHWlkFUc5ohTCr-FzpbOSnPJjS8H6');
+      background-image: url('/assets/images/ogImage.jpg');
     }
     &-bride {
       background-position: 62% 45%;

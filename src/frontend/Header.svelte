@@ -70,8 +70,7 @@
     position: relative;
     width: 100%;
     height: 50vw;
-    background: url('https://doc-0k-18-docs.googleusercontent.com/docs/securesc/gpe3alp7oinmqheeblio72bbhj2lulom/siifs5ial1cg7jsv05gugo6evvph1b98/1563084000000/07129713942040047864/03484629860629133702/1IaoUHWlkFUc5ohTCr-FzpbOSnPJjS8H6')
-      no-repeat;
+    background: url('/assets/images/ogImage.jpg') no-repeat;
     background-position: 50% 90%;
     background-size: cover;
     animation: fadein 0.5s ease-in;
