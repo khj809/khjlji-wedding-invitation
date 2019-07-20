@@ -97,7 +97,7 @@
 
   .btn-reservation {
     width: 100%;
-    font-size: 13px;
+    font-size: 14px;
     color: #fff;
     margin-top: 5px;
     padding: 5px;

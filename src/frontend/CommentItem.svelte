@@ -16,6 +16,9 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #dfdcdc;
+    &:last-of-type {
+      margin-bottom: 21px;
+    }
   }
 
   .list-header {
@@ -27,8 +30,8 @@
       > i {
         display: inline-block;
         vertical-align: middle;
-        width: 12px;
-        height: 12px;
+        width: 15px;
+        height: 15px;
         margin-right: 3px;
         background-repeat: no-repeat;
         background-position: 50%;

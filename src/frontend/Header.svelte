@@ -191,6 +191,32 @@
         > a {
           color: #fff;
         }
+        &:active,
+        &.active {
+          > a {
+            text-indent: -9999em;
+            background-size: 18px 18px;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            &.ic {
+              &-phone {
+                background-image: url('/assets/images/ic-phone.png');
+              }
+              &-gallery {
+                background-image: url('/assets/images/ic-gallery.png');
+              }
+              &-gift {
+                background-image: url('/assets/images/ic-gift.png');
+              }
+              &-comeon {
+                background-image: url('/assets/images/ic-comeon.png');
+              }
+              &-comment {
+                background-image: url('/assets/images/ic-comment.png');
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -217,19 +243,19 @@
 <div class="gnb-wrap">
   <ul class="gnb flex" bind:this={gnb}>
     <li>
-      <a href="#id-information">연락처</a>
+      <a href="#id-information" class="ic-phone">연락처</a>
     </li>
     <li>
-      <a href="#id-gallery">사진첩</a>
+      <a href="#id-gallery" class="ic-gallery">사진첩</a>
     </li>
     <li>
-      <a href="#id-gift">선물예약</a>
+      <a href="#id-gift" class="ic-gift">선물예약</a>
     </li>
     <li>
-      <a href="#id-map">오시는길</a>
+      <a href="#id-map" class="ic-comeon">오시는길</a>
     </li>
     <li>
-      <a href="#id-comment">댓글달기</a>
+      <a href="#id-comment" class="ic-comment">댓글달기</a>
     </li>
   </ul>
 </div>

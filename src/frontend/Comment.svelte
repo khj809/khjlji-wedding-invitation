@@ -105,7 +105,7 @@
   .comment-wrap {
     background-color: #f7f7f7;
     > .padding {
-      padding: 5rem 2rem;
+      padding: 42px 20px 21px;
     }
   }
 

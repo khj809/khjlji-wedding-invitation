@@ -53,7 +53,7 @@
 
     > h2,
     > button {
-      font-size: 15px;
+      font-size: 18px;
       font-weight: bold;
       line-height: 30px;
       height: 30px;

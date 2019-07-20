@@ -47,12 +47,48 @@
   }
 
   .map-title {
+    vertical-align: middle;
     font-size: 15px;
     font-weight: bold;
     line-height: 2;
     margin-top: 10px;
     &-first {
       margin-top: 0;
+    }
+  }
+
+  .map-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .ic {
+    &-car {
+      background-image: url('/assets/images/ic-car.png');
+    }
+    &-train {
+      background-image: url('/assets/images/ic-train.png');
+    }
+    &-exprbus {
+      background-image: url('/assets/images/ic-exprbus.png');
+    }
+    &-bus {
+      background-image: url('/assets/images/ic-bus.png');
+    }
+    &-subway {
+      background-image: url('/assets/images/ic-subway.png');
+    }
+    &-parking {
+      background-image: url('/assets/images/ic-parking.png');
+    }
+    &-guitar {
+      background-image: url('/assets/images/ic-guitar.png');
     }
   }
 
@@ -68,7 +104,7 @@
     margin-bottom: 20px;
 
     .info-hall {
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.5;
       > a {
         text-decoration: underline;
@@ -104,6 +140,7 @@
       <div class="location-wrap">
         <p class="info-hall align-left">
           <strong>유성컨벤션웨딩 2층 팰리스홀</strong>
+          <br />
           대전 유성구 봉명동 692-4
           <br />
           <a href="tel:042-825-7070">042-825-7070</a>
@@ -119,11 +156,17 @@
       </div>
 
       <ul>
-        <li class="map-title map-title-first">자가용안내</li>
+        <li class="map-title map-title-first">
+          <i class="map-icon ic-car" />
+          자가용안내
+        </li>
         <li class="map-list">
           - 유성 IC > 홈플러스 유성점 > 만년교방향(약 3.7km)
         </li>
-        <li class="map-title">기차안내</li>
+        <li class="map-title">
+          <i class="map-icon ic-train" />
+          기차안내
+        </li>
         <li class="map-list">
           - 대전역 : 지하철 1호선 이용 또는 택시 (약 20분 소요)
         </li>
@@ -131,7 +174,10 @@
           - 서대전역 : 지하철 1호선 (서대전 네거리역)이용 또는 택시(약 20분
           소요)
         </li>
-        <li class="map-title">버스안내</li>
+        <li class="map-title">
+          <i class="map-icon ic-exprbus" />
+          버스안내
+        </li>
         <li class="map-list">
           - 대전복합터미널에서 버스 102번, 106번 승차 후 홈플러스 유성점에서
           하차
@@ -140,20 +186,32 @@
           - 유성(금호)고속버스터미널에서 버스 102번 승차 후 홈플러스 유성점에서
           하차
         </li>
-        <li class="map-title">시내버스안내</li>
+        <li class="map-title">
+          <i class="map-icon ic-bus" />
+          시내버스안내
+        </li>
         <li class="map-list">
           - 102, 106, 108, 706, 113번 홈플러스 유성점에서 하차
         </li>
-        <li class="map-title">지하철안내</li>
+        <li class="map-title">
+          <i class="map-icon ic-subway" />
+          지하철안내
+        </li>
         <li class="map-list">
           - 1호선 갑천역 하차, 3번 출구 돌다리 건너편 7분거리
         </li>
         <li class="map-list">
           - 또는 유성온천역 8번출구 이용시 도보 20분 거리
         </li>
-        <li class="map-title">주차안내</li>
+        <li class="map-title">
+          <i class="map-icon ic-parking" />
+          주차안내
+        </li>
         <li class="map-list">- 안내요원의 안내에 따라 주차</li>
-        <li class="map-title">기타안내</li>
+        <li class="map-title">
+          <i class="map-icon ic-guitar" />
+          기타안내
+        </li>
         <li class="map-list">- 식사 시간은 오후 1시부터 4시까지 입니다.</li>
       </ul>
     </div>

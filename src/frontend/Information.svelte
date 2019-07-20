@@ -25,13 +25,13 @@
       background-position: 36% 42%;
     }
     &-rings {
-      width: 15vw;
-      height: 15vw;
-      min-width: 42px;
-      min-height: 42px;
-      max-width: 60px;
-      max-height: 60px;
-      margin-top: -70px;
+      width: 10vw;
+      height: 10vw;
+      min-width: 15px;
+      min-height: 15px;
+      max-width: 42px;
+      max-height: 42px;
+      margin-top: -9vh;
     }
 
     &-call,
@@ -51,19 +51,20 @@
     .couple-info {
       padding: 0 20px;
       > div {
-        width: 40%;
+        width: 43%;
         &:nth-of-type(2) {
-          width: 20%;
+          width: 14%;
         }
       }
     }
 
     .relation {
       margin-top: 20px;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       span {
         font-size: 13px;
+        padding-left: 5px;
       }
       strong {
         font-size: 15px;
