@@ -191,7 +191,6 @@
         > a {
           color: #fff;
         }
-        &:active,
         &.active {
           > a {
             text-indent: -9999em;

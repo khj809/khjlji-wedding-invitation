@@ -38,7 +38,7 @@
 
       var underScrollMenus = menuItems.filter(a => {
         var targetDiv = document.querySelector(a.hash);
-        return targetDiv.offsetTop < scrollY;
+        return targetDiv.offsetTop < scrollY + 42;
       });
       console.log(underScrollMenus);
       menuItems.forEach(menu => {

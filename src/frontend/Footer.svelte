@@ -51,7 +51,9 @@
   <div class="grid position">
     <p class="thankyou">Thank you</p>
     <div class="github">
-      <a href="https://github.com/khj809/khjlji-wedding-invitation">
+      <a
+        href="https://github.com/khj809/khjlji-wedding-invitation"
+        target="_blank">
         <img src="/assets/images/ic-github.png" alt="github" />
       </a>
     </div>
