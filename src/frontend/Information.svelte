@@ -61,16 +61,15 @@
     .relation {
       margin-top: 20px;
       justify-content: center;
-      > span {
+      span {
         font-size: 13px;
-        > strong {
-          font-size: 15px;
-        }
+      }
+      > strong {
+        font-size: 15px;
       }
       .relation-parents {
         > span {
           display: block;
-          font-size: 13px;
         }
       }
     }
@@ -140,10 +139,8 @@
               <span>우지순</span>
               <span>임종구</span>
             </div>
-            <span>
-              &nbsp;&nbsp;의 장녀
-              <strong>정임</strong>
-            </span>
+            <span>&nbsp;의 장녀&nbsp;</span>
+            <strong>정임</strong>
           </div>
           <div class="tel-wrap">
             <a href="tel:010-7378-2407" class="ic-call">
@@ -172,10 +169,8 @@
               <span>박명숙</span>
               <span>김정수</span>
             </div>
-            <span>
-              &nbsp;&nbsp;의 장남
-              <strong>해준</strong>
-            </span>
+            <span>&nbsp;의 장남&nbsp;</span>
+            <strong>해준</strong>
           </div>
           <div class="tel-wrap">
             <a href="tel:010-2710-0109" class="ic-call">
