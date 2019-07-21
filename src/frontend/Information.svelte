@@ -31,7 +31,7 @@
       min-height: 15px;
       max-width: 42px;
       max-height: 42px;
-      margin-top: -9vh;
+      margin-top: -55px;
     }
 
     &-call,
@@ -61,17 +61,18 @@
     .relation {
       margin-top: 20px;
       justify-content: center;
-      align-items: center;
-      span {
+      > span {
         font-size: 13px;
         padding-left: 5px;
-      }
-      strong {
-        font-size: 15px;
+        box-sizing: border-box;
+        > strong {
+          font-size: 15px;
+        }
       }
       .relation-parents {
         > span {
           display: block;
+          font-size: 13px;
         }
       }
     }
@@ -110,9 +111,10 @@
         }
       }
       .name {
-        display: inline-block;
+        display: block;
         font-size: 15px;
         font-weight: bold;
+        text-align: center;
         margin-bottom: 1rem;
         > em {
           font-size: 13px;

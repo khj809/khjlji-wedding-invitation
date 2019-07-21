@@ -19,7 +19,7 @@
 
   import { thirdPartyContext } from './store';
 
-  const appReadyDelayMs = 800;
+  const appReadyDelayMs = 1000;
   let appReady = false;
 
   onMount(() => {
