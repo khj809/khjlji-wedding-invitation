@@ -41,7 +41,6 @@
         provider: 'google',
         accessToken,
       });
-      console.log(res);
       if (!res.user) {
         throw new Error('failed to get user data');
       }

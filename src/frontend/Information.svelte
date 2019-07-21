@@ -92,15 +92,15 @@
     }
 
     .parent-title {
-      font-size: 15px;
+      font-size: 14px;
       text-align: center;
       color: #333;
-      margin-bottom: 3rem;
+      margin-bottom: 20px;
     }
     .tel-wrap {
       text-align: center;
       &.mother {
-        margin-bottom: 2rem;
+        margin-bottom: 20px;
       }
       .ic {
         &-call,

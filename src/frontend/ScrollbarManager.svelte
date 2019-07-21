@@ -8,7 +8,7 @@
 
   onMount(() => {
     menuItems = Array.from(document.querySelectorAll('.gnb>li>a'));
-    console.log(menuItems);
+
     window.addEventListener('scroll', () => {
       scrollY = window.scrollY;
       document.querySelectorAll('.section').forEach(element => {
@@ -40,7 +40,7 @@
         var targetDiv = document.querySelector(a.hash);
         return targetDiv.offsetTop < scrollY + 42;
       });
-      console.log(underScrollMenus);
+
       menuItems.forEach(menu => {
         menu.parentElement.classList.remove('active');
       });

@@ -9,6 +9,13 @@
     .querySelector("meta[property='og:description']")
     .getAttribute('content');
 
+  const shareFacebook = () => {
+    FB.ui({
+      method: 'share',
+      href: url,
+    });
+  };
+
   const shareKakaoLink = () => {
     Kakao.Link.sendDefault({
       objectType: 'feed',
@@ -58,18 +65,37 @@
     width: 24px;
     height: 24px;
   }
+
+  #custom-fb-button,
+  #custom-tweet-button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    color: transparent;
+    text-indent: -9999em;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #custom-fb-button {
+    background-image: url('/assets/images/ic-facebook.png');
+  }
+
+  #custom-tweet-button {
+    background-image: url('/assets/images/ic-twitter.png');
+  }
 </style>
 
 <div class="grid">
   <ul class="share-wrap">
     <li class="border-none">
-      <button class="fb-share-button" data-href={url} data-layout="button">
-        페이스북
-      </button>
+      <button id="custom-fb-button" on:click={shareFacebook} alt="페이스북" />
     </li>
     <li>
       <a
-        class="twitter-share-button"
+        id="custom-tweet-button"
         href={`https://twitter.com/intent/tweet?text=${encodeURI(`${title} ${description}`)}&url=${url}`}>
         트위터
       </a>

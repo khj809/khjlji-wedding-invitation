@@ -181,6 +181,25 @@ body {
   /* scroll-behavior: smooth; */
 }
 
+body:after {
+  display: none;
+  content: url('/assets/images/ic-kakao.png')
+    url('/assets/images/ic-facebook.png') url('/assets/images/ic-naver.png')
+    url('/assets/images/ic-google.png') url('/assets/images/ic-car.png')
+    url('/assets/images/ic-train.png') url('/assets/images/ic-exprbus.png')
+    url('/assets/images/ic-bus.png') url('/assets/images/ic-subway.png')
+    url('/assets/images/ic-parking.png') url('/assets/images/ic-guitar.png')
+    url('/assets/images/ic-close.png') url('/assets/images/ogImage.jpg')
+    url('/assets/images/ic-phone.png') url('/assets/images/ic-gallery.png')
+    url('/assets/images/ic-gift.png') url('/assets/images/ic-comeon.png')
+    url('/assets/images/ic-comment.png') url('/assets/images/ic-twitter.png')
+    url('/assets/images/photo-01.jpg') url('/assets/images/photo-02.jpg')
+    url('/assets/images/photo-03.jpg') url('/assets/images/photo-04.jpg')
+    url('/assets/images/photo-05.jpg') url('/assets/images/photo-06.jpg')
+    url('/assets/images/photo-07.jpg') url('/assets/images/photo-09.jpg')
+    url('/assets/images/photo-09.jpg');
+}
+
 body.scroll-lock {
   overflow: hidden;
 }
@@ -250,6 +269,7 @@ body.scroll-lock {
 .default-position-style-top-center {
   width: 90% !important;
   max-width: 400px !important;
+  z-index: 6;
 }
 
 .notification.default-notification-style {

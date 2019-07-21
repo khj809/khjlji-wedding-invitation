@@ -7,7 +7,6 @@ let chatId = '781956430';
 const bot = new TeleBot(TELEGRAM_TOKEN);
 bot.on(/\/start/, msg => {
   chatId = msg.from.id;
-  console.log(chatId);
   msg.reply.text('khjlji-wedding-invitation 텔레그램 챗봇에 연동되었습니다.');
 });
 
