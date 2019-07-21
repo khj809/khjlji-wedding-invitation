@@ -5,7 +5,7 @@ export const toastMsg = text => {
   addNotification({
     id: new Date().getTime(),
     text: text,
-    removeAfter: 2000,
+    removeAfter: 3000,
     position: 'top-center',
   });
 };

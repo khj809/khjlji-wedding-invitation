@@ -139,7 +139,7 @@
               <span>우지순</span>
               <span>임종구</span>
             </div>
-            <span>&nbsp;의 장녀&nbsp;</span>
+            <span>&nbsp;&nbsp;의 장녀&nbsp;</span>
             <strong>정임</strong>
           </div>
           <div class="tel-wrap">
@@ -169,7 +169,7 @@
               <span>박명숙</span>
               <span>김정수</span>
             </div>
-            <span>&nbsp;의 장남&nbsp;</span>
+            <span>&nbsp;&nbsp;의 장남&nbsp;</span>
             <strong>해준</strong>
           </div>
           <div class="tel-wrap">

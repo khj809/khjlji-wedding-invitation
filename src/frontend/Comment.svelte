@@ -149,7 +149,7 @@
       line-height: 1.5;
       padding: 5px 10px;
       border: 1px solid #073c35;
-      box-shadow: none;
+      border-radius: 0;
       box-sizing: border-box;
     }
 
