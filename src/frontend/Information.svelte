@@ -31,7 +31,7 @@
       min-height: 15px;
       max-width: 42px;
       max-height: 42px;
-      margin-top: -55px;
+      margin-top: -57px;
     }
 
     &-call,
@@ -63,8 +63,6 @@
       justify-content: center;
       > span {
         font-size: 13px;
-        padding-left: 5px;
-        box-sizing: border-box;
         > strong {
           font-size: 15px;
         }
@@ -143,7 +141,7 @@
               <span>임종구</span>
             </div>
             <span>
-              의 장녀
+              &nbsp;&nbsp;의 장녀
               <strong>정임</strong>
             </span>
           </div>
@@ -175,7 +173,7 @@
               <span>김정수</span>
             </div>
             <span>
-              의 장남
+              &nbsp;&nbsp;의 장남
               <strong>해준</strong>
             </span>
           </div>
