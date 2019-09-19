@@ -110,14 +110,14 @@
   }
 
   .login-name {
-    font-size: 15px;
+    font-size: 20px;
     text-align: left;
     margin-bottom: 10px;
     > i {
       display: inline-block;
       vertical-align: middle;
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
@@ -145,7 +145,7 @@
     > input {
       max-height: 100px;
       font-family: 'Gamja Flower', cursive;
-      font-size: 15px;
+      font-size: 20px;
       line-height: 1.5;
       padding: 5px 10px;
       border: 1px solid #073c35;
@@ -163,6 +163,23 @@
       color: #fff;
       background-color: #073c35;
       cursor: pointer;
+    }
+  }
+
+  @media (max-width: 411px) {
+    .login-name {
+      font-size: 16px;
+      > i {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .input-wrap {
+      > textarea,
+      > input {
+        font-size: 16px;
+      }
     }
   }
 </style>
@@ -188,7 +205,7 @@
         <input
           id="btn-comment"
           type="submit"
-          value={!!$user ? '등록하기' : '로그인'} />
+          value={!!$user ? '등록' : '로그인'} />
       </div>
     </form>
 

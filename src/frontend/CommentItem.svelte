@@ -11,7 +11,7 @@
 
 <style lang="scss">
   .comment-list {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -26,12 +26,12 @@
     justify-content: space-between;
     align-items: center;
     h5 {
-      font-size: 15px;
+      font-size: 20px;
       > i {
         display: inline-block;
         vertical-align: middle;
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         margin-right: 3px;
         background-repeat: no-repeat;
         background-position: 50%;
@@ -51,7 +51,7 @@
       }
     }
     span {
-      font-size: 13px;
+      font-size: 18px;
     }
   }
 
@@ -62,15 +62,43 @@
     margin-top: 10px;
     > p {
       width: calc(100% - 30px);
-      font-size: 15px;
+      font-size: 20px;
       line-height: 1.5;
       white-space: pre-wrap;
     }
     > .btn-delete {
       width: 30px;
-      font-size: 13px;
+      font-size: 18px;
       line-height: 1.5;
       cursor: pointer;
+    }
+  }
+
+  @media (max-width: 411px) {
+    .comment-list {
+      font-size: 16px;
+    }
+
+    .list-header {
+      h5 {
+        font-size: 16px;
+        > i {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      span {
+        font-size: 15px;
+      }
+    }
+
+    .list-text {
+      > p {
+        font-size: 16px;
+      }
+      > .btn-delete {
+        font-size: 15px;
+      }
     }
   }
 </style>

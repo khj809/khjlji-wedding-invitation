@@ -62,10 +62,10 @@
       margin-top: 20px;
       justify-content: center;
       span {
-        font-size: 13px;
+        font-size: 18px;
       }
       > strong {
-        font-size: 15px;
+        font-size: 20px;
       }
       .relation-parents {
         > span {
@@ -90,33 +90,54 @@
     }
 
     .parent-title {
-      font-size: 14px;
+      font-size: 18px;
       text-align: center;
       color: #333;
       margin-bottom: 20px;
     }
+
     .tel-wrap {
       text-align: center;
       &.mother {
         margin-bottom: 20px;
       }
-      .ic {
-        &-call,
-        &-message {
-          width: 20px;
-          height: 20px;
-        }
-      }
       .name {
         display: block;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bold;
         text-align: center;
         margin-bottom: 1rem;
         > em {
-          font-size: 13px;
+          font-size: 18px;
           font-weight: normal;
           margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 411px) {
+    .couple {
+      .relation {
+        span {
+          font-size: 14px;
+        }
+        > strong {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .parents {
+      .parent-title {
+        font-size: 15px;
+      }
+      .tel-wrap {
+        .name {
+          font-size: 16px;
+          > em {
+            font-size: 15px;
+          }
         }
       }
     }

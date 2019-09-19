@@ -6,7 +6,7 @@
   .invitation-wrap {
     margin: 42px 0;
     p {
-      font-size: 15px;
+      font-size: 20px;
     }
     .info-wedding {
       line-height: 2;
@@ -18,9 +18,21 @@
   }
 
   .greeting-text {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 2;
     padding: 42px 20px;
+  }
+
+  @media (max-width: 411px) {
+    .invitation-wrap {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .greeting-text {
+      font-size: 15px;
+    }
   }
 </style>
 

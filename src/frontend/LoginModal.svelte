@@ -20,7 +20,7 @@
     .btn-login {
       display: block;
       width: 100%;
-      font-size: 13px;
+      font-size: 18px;
       text-align: left;
       margin: 0 auto 20px;
       padding: 15px 20px 15px 50px;
@@ -47,6 +47,14 @@
           background-size: 22px 22px;
           background-image: url('/assets/images/ic-google.png');
         }
+      }
+    }
+  }
+
+  @media (max-width: 411px) {
+    .modal {
+      .btn-login {
+        font-size: 15px;
       }
     }
   }

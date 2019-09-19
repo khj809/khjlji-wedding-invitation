@@ -181,7 +181,7 @@ body {
   font-family: 'Gamja Flower', cursive;
   color: #000;
   text-align: left;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
   background-color: #fff;
@@ -256,7 +256,7 @@ body.scroll-lock {
 
 .sub-title {
   position: relative;
-  font-size: 15px;
+  font-size: 20px;
   padding-top: 10px;
   margin-bottom: 20px;
 }
@@ -282,7 +282,7 @@ body.scroll-lock {
 .notification.default-notification-style {
   width: 100%;
   font-family: 'Gamja Flower', cursive;
-  font-size: 15px !important;
+  font-size: 20px !important;
   text-align: center !important;
   margin: 12px 0;
 }
@@ -299,27 +299,31 @@ body.scroll-lock {
 }
 
 @media (max-width: 1023px) {
-  html,
-  body {
-    font-size: 8px;
-  }
-
   .ls-tablet {
     display: block;
   }
 }
 
 @media (max-width: 768px) {
-  html,
-  body {
-    font-size: 6px;
-  }
-
   .grid {
     width: 100%;
   }
 
   .ls-mobile {
     display: block;
+  }
+}
+
+@media (max-width: 411px) {
+  body {
+    font-size: 15px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+  }
+
+  .notification.default-notification-style {
+    font-size: 16px !important;
   }
 }

@@ -29,7 +29,7 @@
     background-color: #fff;
 
     > h1 {
-      font-size: 13px;
+      font-size: 18px;
       line-height: 1.5;
       margin-bottom: 20px;
     }
@@ -51,20 +51,38 @@
       width: 80px;
       height: 35px;
       line-height: 35px;
-      font-size: 13px;
+      font-size: 18px;
       color: #fff;
       margin: 15px auto 0;
       background-color: #073c35;
       cursor: pointer;
     }
   }
+
+  @media (max-width: 411px) {
+    .modal {
+      > h1 {
+        font-size: 15px;
+      }
+
+      .btn-res {
+        font-size: 15px;
+      }
+    }
+  }
 </style>
 
 <Modal on:close>
   <div class="modal" slot="modal">
-    <h1 class="align-center">소중한 한마디와 함께 선물을 예약해 주세요.</h1>
     <h1 class="align-center">
-      {$user.name} 님께서 선물해 주신 {gift.name}은(는)
+      소중한 한마디와 함께
+      <br />
+      선물을 예약해 주세요.
+    </h1>
+    <h1 class="align-center">
+      {$user.name} 님께서 선물해 주신
+      <br />
+      {gift.name}은(는)
       <br />
       항상 감사한 마음으로 사용하겠습니다.
     </h1>

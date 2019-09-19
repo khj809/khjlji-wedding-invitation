@@ -97,7 +97,7 @@
 
   .btn-reservation {
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
     margin-top: 5px;
     padding: 5px;
@@ -116,13 +116,23 @@
   }
 
   .sub-content {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
 
   @media (max-width: 768px) {
     .gift {
       height: 30vw;
+    }
+  }
+
+  @media (max-width: 411px) {
+    .btn-reservation {
+      font-size: 15px;
+    }
+
+    .sub-content {
+      font-size: 16px;
     }
   }
 </style>
@@ -147,7 +157,9 @@
       소중히 다루어 사용하겠습니다.
       <br />
       <br />
-      소셜 계정으로 로그인하여 애정어린 한마디와 함께
+      소셜 계정으로 로그인하여
+      <br />
+      애정어린 한마디와 함께
       <br />
       선물을 예약해 주세요.
     </p>

@@ -18,7 +18,7 @@
     .copyright {
       display: block;
       font-family: 'Coming Soon', cursive;
-      font-size: 11px;
+      font-size: 12px;
       text-align: center;
       line-height: 1.5;
       color: #fff;

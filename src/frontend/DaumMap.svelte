@@ -48,7 +48,7 @@
 
   .map-title {
     vertical-align: middle;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 2;
     margin-top: 10px;
@@ -93,7 +93,7 @@
   }
 
   .map-list {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
   }
 
@@ -104,7 +104,7 @@
     margin-bottom: 20px;
 
     .info-hall {
-      font-size: 15px;
+      font-size: 20px;
       line-height: 1.5;
       > a {
         text-decoration: underline;
@@ -125,6 +125,22 @@
         width: 40px;
         height: 40px;
         cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 411px) {
+    .map-title {
+      font-size: 15px;
+    }
+
+    .map-list {
+      font-size: 15px;
+    }
+
+    .location-wrap {
+      .info-hall {
+        font-size: 15px;
       }
     }
   }

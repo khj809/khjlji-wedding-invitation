@@ -53,7 +53,7 @@
 
     > h2,
     > button {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: bold;
       line-height: 30px;
       height: 30px;
@@ -64,7 +64,7 @@
       width: 30px;
       text-indent: -9999em;
       background: url('/assets/images/ic-close.png') no-repeat 50%;
-      background-size: 15px 15px;
+      background-size: 20px 20px;
     }
   }
 
@@ -81,6 +81,18 @@
     max-width: 576px;
     max-height: 648px;
     margin: 0 auto;
+  }
+
+  @media (max-width: 411px) {
+    .modal-header {
+      > h2,
+      > button {
+        font-size: 16px;
+      }
+      > button {
+        background-size: 15px 15px;
+      }
+    }
   }
 </style>
 
