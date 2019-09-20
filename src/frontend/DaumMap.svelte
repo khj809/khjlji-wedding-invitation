@@ -140,7 +140,7 @@
 
     .location-wrap {
       .info-hall {
-        font-size: 15px;
+        font-size: 14px;
       }
     }
   }

@@ -120,23 +120,23 @@
     .couple {
       .relation {
         span {
-          font-size: 14px;
+          font-size: 12.3px;
         }
         > strong {
-          font-size: 16px;
+          font-size: 14px;
         }
       }
     }
 
     .parents {
       .parent-title {
-        font-size: 15px;
+        font-size: 13px;
       }
       .tel-wrap {
         .name {
-          font-size: 16px;
+          font-size: 14px;
           > em {
-            font-size: 15px;
+            font-size: 12.3px;
           }
         }
       }

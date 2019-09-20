@@ -110,6 +110,7 @@
   }
 
   .login-name {
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 20px;
     text-align: left;
     margin-bottom: 10px;
@@ -144,7 +145,7 @@
     > textarea,
     > input {
       max-height: 100px;
-      font-family: 'Gamja Flower', cursive;
+      font-family: 'Nanum Gothic', sans-serif;
       font-size: 20px;
       line-height: 1.5;
       padding: 5px 10px;
@@ -168,17 +169,17 @@
 
   @media (max-width: 411px) {
     .login-name {
-      font-size: 16px;
+      font-size: 14px;
       > i {
-        width: 16px;
-        height: 16px;
+        width: 15px;
+        height: 15px;
       }
     }
 
     .input-wrap {
       > textarea,
       > input {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
@@ -197,7 +198,8 @@
       <div class="input-wrap">
         <textarea
           rows="1"
-          placeholder={!!$user ? '내용을 입력해 주세요.' : '소셜 로그인을 해주세요.'}
+          maxlength="1000"
+          placeholder={!!$user ? '1000자 이내 입력' : '소셜 로그인을 해주세요.'}
           on:focus|preventDefault={handleTextareaFocused}
           on:input={e => {
             handleTextareaResize(e.target);

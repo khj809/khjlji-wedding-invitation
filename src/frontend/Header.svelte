@@ -175,10 +175,11 @@
     transition: 0.5s;
     > li {
       width: 100%;
-      padding: 10px 5px;
+      padding: 10.5px 5px;
       > a {
         display: block;
-        font-size: 15px;
+        font-size: 14px;
+        letter-spacing: -1.5px;
         text-align: center;
       }
     }

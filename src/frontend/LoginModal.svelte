@@ -54,7 +54,7 @@
   @media (max-width: 411px) {
     .modal {
       .btn-login {
-        font-size: 15px;
+        font-size: 14px;
       }
     }
   }

@@ -38,7 +38,7 @@
       resize: none;
       width: 100%;
       height: 100px;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.5;
       padding: 10px;
       border-radius: 3px;
@@ -62,11 +62,11 @@
   @media (max-width: 411px) {
     .modal {
       > h1 {
-        font-size: 15px;
+        font-size: 14px;
       }
 
       .btn-res {
-        font-size: 15px;
+        font-size: 14px;
       }
     }
   }
@@ -87,7 +87,11 @@
       항상 감사한 마음으로 사용하겠습니다.
     </h1>
     <form on:submit|preventDefault={handleSubmit}>
-      <textarea class="gift-res-msg" required />
+      <textarea
+        class="gift-res-msg"
+        maxlength="1000"
+        placeholder="1000자 이내로 입력해 주세요."
+        required />
       <input class="btn-res" type="submit" value="예약하기" />
     </form>
   </div>

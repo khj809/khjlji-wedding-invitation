@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Gamja+Flower&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Nanum+Gothic|Nanum+Myeongjo&display=swap&subset=korean');
 
 html,
 body,
@@ -72,7 +72,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: inherit;
   text-decoration: none;
   letter-spacing: inherit;
@@ -93,7 +93,7 @@ button {
   display: inline-block;
   margin: 0;
   padding: 0;
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'Nanum Gothic', sans-serif;
   border: 0;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
@@ -139,7 +139,7 @@ th {
 
 input {
   width: 100%;
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'Nanum Gothic', sans-serif;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -174,11 +174,11 @@ html {
 
 body {
   position: relative;
-  min-width: 280px;
+  min-width: 300px;
   min-height: 100%;
   height: 100%;
   overflow-y: auto;
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'Nanum Myeongjo', serif;
   color: #000;
   text-align: left;
   font-size: 18px;
@@ -257,6 +257,7 @@ body.scroll-lock {
 .sub-title {
   position: relative;
   font-size: 20px;
+  font-weight: bold;
   padding-top: 10px;
   margin-bottom: 20px;
 }
@@ -281,7 +282,7 @@ body.scroll-lock {
 
 .notification.default-notification-style {
   width: 100%;
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px !important;
   text-align: center !important;
   margin: 12px 0;
@@ -320,10 +321,10 @@ body.scroll-lock {
   }
 
   .sub-title {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .notification.default-notification-style {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 }

@@ -11,6 +11,7 @@
 
 <style lang="scss">
   .comment-list {
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -26,6 +27,7 @@
     justify-content: space-between;
     align-items: center;
     h5 {
+      font-family: 'Nanum Gothic', sans-serif;
       font-size: 20px;
       > i {
         display: inline-block;
@@ -51,6 +53,7 @@
       }
     }
     span {
+      font-family: 'Nanum Gothic', sans-serif;
       font-size: 18px;
     }
   }
@@ -62,6 +65,7 @@
     margin-top: 10px;
     > p {
       width: calc(100% - 30px);
+      font-family: 'Nanum Gothic', sans-serif;
       font-size: 20px;
       line-height: 1.5;
       white-space: pre-wrap;
@@ -76,28 +80,28 @@
 
   @media (max-width: 411px) {
     .comment-list {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     .list-header {
       h5 {
-        font-size: 16px;
+        font-size: 14px;
         > i {
-          width: 16px;
-          height: 16px;
+          width: 15px;
+          height: 15px;
         }
       }
       span {
-        font-size: 15px;
+        font-size: 13px;
       }
     }
 
     .list-text {
       > p {
-        font-size: 16px;
+        font-size: 14px;
       }
       > .btn-delete {
-        font-size: 15px;
+        font-size: 13px;
       }
     }
   }

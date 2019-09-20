@@ -26,12 +26,13 @@
   @media (max-width: 411px) {
     .invitation-wrap {
       p {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
 
     .greeting-text {
-      font-size: 15px;
+      font-size: 14px;
+      letter-spacing: -0.9px;
     }
   }
 </style>

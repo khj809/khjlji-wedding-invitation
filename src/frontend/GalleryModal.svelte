@@ -53,6 +53,7 @@
 
     > h2,
     > button {
+      font-family: 'Nanum Gothic', sans-serif;
       font-size: 20px;
       font-weight: bold;
       line-height: 30px;
@@ -87,7 +88,7 @@
     .modal-header {
       > h2,
       > button {
-        font-size: 16px;
+        font-size: 14px;
       }
       > button {
         background-size: 15px 15px;
