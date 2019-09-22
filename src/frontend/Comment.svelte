@@ -111,14 +111,14 @@
 
   .login-name {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     margin-bottom: 10px;
     > i {
       display: inline-block;
       vertical-align: middle;
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
@@ -146,7 +146,7 @@
     > input {
       max-height: 100px;
       font-family: 'Nanum Gothic', sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.5;
       padding: 5px 10px;
       border: 1px solid #073c35;

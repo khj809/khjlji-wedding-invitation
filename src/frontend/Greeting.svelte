@@ -5,9 +5,6 @@
 <style lang="scss">
   .invitation-wrap {
     margin: 42px 0;
-    p {
-      font-size: 20px;
-    }
     .info-wedding {
       line-height: 2;
     }
@@ -18,18 +15,12 @@
   }
 
   .greeting-text {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2;
     padding: 42px 20px;
   }
 
   @media (max-width: 411px) {
-    .invitation-wrap {
-      p {
-        font-size: 14px;
-      }
-    }
-
     .greeting-text {
       font-size: 14px;
       letter-spacing: -0.9px;

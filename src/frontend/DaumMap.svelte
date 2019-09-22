@@ -48,7 +48,7 @@
 
   .map-title {
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 2;
     margin-top: 10px;
@@ -104,7 +104,7 @@
     margin-bottom: 20px;
 
     .info-hall {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.5;
       > a {
         text-decoration: underline;

@@ -9,7 +9,7 @@
 
     .thankyou {
       font-family: 'Coming Soon', cursive;
-      font-size: 20px;
+      font-size: 18px;
       text-align: center;
       line-height: 1.5;
       color: #fff;

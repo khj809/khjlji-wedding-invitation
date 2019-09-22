@@ -61,16 +61,9 @@
     .relation {
       margin-top: 20px;
       justify-content: center;
-      span {
-        font-size: 18px;
-      }
+      font-size: 16px;
       > strong {
-        font-size: 20px;
-      }
-      .relation-parents {
-        > span {
-          display: block;
-        }
+        font-size: 18px;
       }
     }
 
@@ -103,12 +96,12 @@
       }
       .name {
         display: block;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         text-align: center;
         margin-bottom: 1rem;
         > em {
-          font-size: 18px;
+          font-size: 16px;
           font-weight: normal;
           margin-right: 5px;
         }
@@ -119,24 +112,22 @@
   @media (max-width: 411px) {
     .couple {
       .relation {
-        span {
-          font-size: 12.3px;
-        }
+        font-size: 14px;
         > strong {
-          font-size: 14px;
+          font-size: 15px;
         }
       }
     }
 
     .parents {
       .parent-title {
-        font-size: 13px;
+        font-size: 15px;
       }
       .tel-wrap {
         .name {
-          font-size: 14px;
+          font-size: 15px;
           > em {
-            font-size: 12.3px;
+            font-size: 14px;
           }
         }
       }
@@ -155,13 +146,9 @@
           <div>
             <i class="ic-bride" />
           </div>
-          <div class="relation flex">
-            <div class="relation-parents">
-              <span>우지순</span>
-              <span>임종구</span>
-            </div>
-            <span>&nbsp;&nbsp;의 장녀&nbsp;</span>
-            <strong>정임</strong>
+          <div class="relation">
+            신부
+            <strong>임정임</strong>
           </div>
           <div class="tel-wrap">
             <a href="tel:010-7378-2407" class="ic-call">
@@ -185,13 +172,9 @@
           <div>
             <i class="ic-groom" />
           </div>
-          <div class="relation flex">
-            <div class="relation-parents">
-              <span>박명숙</span>
-              <span>김정수</span>
-            </div>
-            <span>&nbsp;&nbsp;의 장남&nbsp;</span>
-            <strong>해준</strong>
+          <div class="relation">
+            신랑
+            <strong>김해준</strong>
           </div>
           <div class="tel-wrap">
             <a href="tel:010-2710-0109" class="ic-call">

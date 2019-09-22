@@ -54,7 +54,7 @@
     > h2,
     > button {
       font-family: 'Nanum Gothic', sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       line-height: 30px;
       height: 30px;
@@ -65,7 +65,7 @@
       width: 30px;
       text-indent: -9999em;
       background: url('/assets/images/ic-close.png') no-repeat 50%;
-      background-size: 20px 20px;
+      background-size: 18px 18px;
     }
   }
 

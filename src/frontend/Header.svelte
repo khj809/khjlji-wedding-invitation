@@ -178,7 +178,7 @@
       padding: 10.5px 5px;
       > a {
         display: block;
-        font-size: 14px;
+        font-size: 18px;
         letter-spacing: -1.5px;
         text-align: center;
       }
@@ -216,6 +216,17 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 411px) {
+    .gnb {
+      > li {
+        > a {
+          font-size: 14px;
+          letter-spacing: -1.5px;
         }
       }
     }

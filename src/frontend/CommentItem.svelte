@@ -12,7 +12,7 @@
 <style lang="scss">
   .comment-list {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -28,12 +28,12 @@
     align-items: center;
     h5 {
       font-family: 'Nanum Gothic', sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       > i {
         display: inline-block;
         vertical-align: middle;
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
         margin-right: 3px;
         background-repeat: no-repeat;
         background-position: 50%;
@@ -66,7 +66,7 @@
     > p {
       width: calc(100% - 30px);
       font-family: 'Nanum Gothic', sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.5;
       white-space: pre-wrap;
     }
