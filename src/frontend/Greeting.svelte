@@ -7,6 +7,9 @@
     margin: 42px 0;
     .info-wedding {
       line-height: 2;
+      > em {
+        font-size: 16px;
+      }
     }
   }
 
@@ -21,6 +24,13 @@
   }
 
   @media (max-width: 411px) {
+    .invitation-wrap {
+      .info-wedding {
+        > em {
+          font-size: 14px;
+        }
+      }
+    }
     .greeting-text {
       font-size: 14px;
       letter-spacing: -0.9px;
@@ -33,6 +43,8 @@
     <p class="sub-title align-center">초대합니다</p>
     <p class="info-wedding align-center">
       2019. 11. 16 토요일 오후 2시
+      <br />
+      <em>(식사 시간 : 오후 1시 ~ 4시)</em>
       <br />
       유성컨벤션웨딩 2층 팰리스홀
     </p>
