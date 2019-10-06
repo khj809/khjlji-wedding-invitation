@@ -131,11 +131,11 @@
 
   @media (max-width: 411px) {
     .map-title {
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .map-list {
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .location-wrap {
