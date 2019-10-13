@@ -1,68 +1,36 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# 김해준 임정임 모바일청첩장 프로젝트
 
----
+https://khjlji-wedding-invitation.herokuapp.com/
 
-# svelte app
+## Setup
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+본 레포를 클론받은 후에 `.env` 파일을 생성하여 필요한 환경변수들을 세팅해 줍니다.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
+```
+PRISMA_ENDPOINT=
+PRISMA_SECRET=
+PORT=
+TELEGRAM_TOKEN=
 ```
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+이후에 다음 명령어를 통해 개발서버를 실행합니다.
 
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
 ```
-
-...then start [Rollup](https://rollupjs.org):
-
-```bash
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+개발서버는 프론트엔드 서버와 백엔드 서버가 동시에 `npm-run-all`로 실행되며, 프론트는 rollup을 통해 hot reloading이 되고, 백엔드는 nodemon을 통해 hot reloading이 됩니다.
 
+## Build
 
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
 ```
-
-Then, from within your project folder:
-
-```bash
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
 npm run build
-surge public
 ```
+
+## Deploy
+
+배포는 본 저장소에 커밋시 travis를 통해 heroku로 배포됩니다.
+
+## 개발후기
+
+https://onsealeatang.gitbook.io/khjlji-wedding-invitation/
