@@ -50,6 +50,7 @@
       width: 100%;
       text-align: center;
       border-left: 1px solid #dfdcdc;
+      line-height: 1;
       &.border-none {
         border-left: 0 none;
       }
