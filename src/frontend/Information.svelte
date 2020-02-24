@@ -151,10 +151,10 @@
             <strong>임정임</strong>
           </div>
           <div class="tel-wrap">
-            <a href="tel:010-7378-2407" class="ic-call">
+            <a href="tel:010-0000-0000" class="ic-call">
               <img src="/assets/images/ic-call.png" alt="신부에게 전화하기" />
             </a>
-            <a href="sms:010-7378-2407" class="ic-message">
+            <a href="sms:010-0000-0000" class="ic-message">
               <img
                 src="/assets/images/ic-message.png"
                 alt="신부에게 문자하기" />
@@ -177,10 +177,10 @@
             <strong>김해준</strong>
           </div>
           <div class="tel-wrap">
-            <a href="tel:010-2710-0109" class="ic-call">
+            <a href="tel:010-0000-0000" class="ic-call">
               <img src="/assets/images/ic-call.png" alt="신랑에게 전화하기" />
             </a>
-            <a href="sms:010-2710-0109" class="ic-message">
+            <a href="sms:010-0000-0000" class="ic-message">
               <img
                 src="/assets/images/ic-message.png"
                 alt="신랑에게 문자하기" />
@@ -204,12 +204,12 @@
             </span>
           </div>
           <div>
-            <a href="tel:010-4478-7117" class="ic-call">
+            <a href="tel:010-0000-0000" class="ic-call">
               <img
                 src="/assets/images/ic-call.png"
                 alt="신부 측 어머니께 전화하기" />
             </a>
-            <a href="sms:010-4478-7117" class="ic-message">
+            <a href="sms:010-0000-0000" class="ic-message">
               <img
                 src="/assets/images/ic-message.png"
                 alt="신부 측 어머니께 문자하기" />
@@ -224,12 +224,12 @@
             </span>
           </div>
           <div>
-            <a href="tel:010-8807-7117" class="ic-call">
+            <a href="tel:010-0000-0000" class="ic-call">
               <img
                 src="/assets/images/ic-call.png"
                 alt="신부 측 아버지께 전화하기" />
             </a>
-            <a href="sms:010-8807-7117" class="ic-message">
+            <a href="sms:010-0000-0000" class="ic-message">
               <img
                 src="/assets/images/ic-message.png"
                 alt="신부 측 아버지께 문자하기" />
@@ -248,12 +248,12 @@
             </span>
           </div>
           <div>
-            <a href="tel:010-4561-0108" class="ic-call">
+            <a href="tel:010-0000-0000" class="ic-call">
               <img
                 src="/assets/images/ic-call.png"
                 alt="신랑 측 어머니께 전화하기" />
             </a>
-            <a href="sms:010-4561-0108" class="ic-message">
+            <a href="sms:010-0000-0000" class="ic-message">
               <img
                 src="/assets/images/ic-message.png"
                 alt="신랑 측 어머니께 문자하기" />
@@ -268,12 +268,12 @@
             </span>
           </div>
           <div>
-            <a href="tel:010-9615-0102" class="ic-call">
+            <a href="tel:010-0000-0000" class="ic-call">
               <img
                 src="/assets/images/ic-call.png"
                 alt="신랑 측 아버지께 전화하기" />
             </a>
-            <a href="sms:010-9615-0102" class="ic-message">
+            <a href="sms:010-0000-0000" class="ic-message">
               <img
                 src="/assets/images/ic-message.png"
                 alt="신랑 측 아버지께 문자하기" />

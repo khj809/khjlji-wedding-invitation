@@ -32,7 +32,7 @@
       }
     }
     .greeting-text {
-      font-size: 14px;
+      font-size: 15px;
       letter-spacing: -0.9px;
     }
   }

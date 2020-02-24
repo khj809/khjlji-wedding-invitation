@@ -58,12 +58,14 @@
 
   .share-kakao {
     width: 24px;
-    height: 25px;
+    height: 24px;
+    vertical-align: top;
   }
 
   .share-kakaostory {
     width: 24px;
     height: 24px;
+    vertical-align: top;
   }
 
   #custom-fb-button,
