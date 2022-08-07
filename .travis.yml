@@ -1,9 +1,0 @@
-language: node_js
-node_js:
-  - '11'
-script: 'true'
-deploy:
-  provider: heroku
-  api_key:
-    secure: IaHwumNkG1WhtQcIoGWl0ZY1bO+0hgUFuAD32QeACrCxSTv8YIfpnCkgOKlfsgKkuOoyqCzEZZpBHnZdbXjhp64eyJqa+GvzowNFwIfy9DNBenb5fuKstU2pYlfrnj5Gu1TPTHooaiuhZ+bdZGBm/YkwEUrZ8TVPOY8XdSyOgxxUmBxagk3gdtQD99igFlzC/UXlCIloZYCTxoBtRoCohj+TXyKb6+OOWGWIFuvlHwkF+5UiV41iCKkB1mXnfQsW3sxS5/DTUP/10SYQ3pbO21NuGL6ejjEObOaU9Im77CLGg+r1nRyQLMwNmpu9fjBpH5O1o+/+OVcvcpHf4MMvdxaIrn0WrAk0I0NRfSt4AMFp4itSsSyCUvLH3TR7uOslF+SCQNP0g/s6V0+G/4UXeqAYzAfyiSGCrkcyaTEPCgq7zhPXHvB94hs+NoiRoUERXTRmwqbT/QtwUhYWDMhYf2nhHSNU2Sbs+OfbmuFGk9YsdRSAZkqDkZxIemYFM8pyO61b9K4iR56lwrLxJvQMRQ6xWcSDi/wiCcI8CA1lDV0nd7wck0bL1hlsKUeNHoe6IdT3tzc4++yNPDsoAFmvJDBQTiPJK4MCzhT8CoByOsy8i01g/gPUUKWCKojwlZHzOYddas1zCEBEfl1SBXHIas8rtnnCTkjszmnrvhtIt0o=
-  app: khjlji-wedding-invitation

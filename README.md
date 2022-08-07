@@ -4,32 +4,47 @@ https://khjlji-wedding-invitation.herokuapp.com/
 
 ## Setup
 
-본 레포를 클론받은 후에 `.env` 파일을 생성하여 필요한 환경변수들을 세팅해 줍니다.
+본 레포를 클론받은 후에 의존 package들을 설치해줍니다.
 
 ```
-PRISMA_ENDPOINT=
-PRISMA_SECRET=
-PORT=
+yarn
+```
+
+`.env.template`을 참고하여 `.env` 파일을 생성하고 필요한 환경변수들을 세팅해 줍니다.
+
+```
+HASURA_GRAPHQL_ENDPOINT=
+HASURA_ADMIN_SECRET=
+HASURA_JWT_SECRET_KEY=
+
 TELEGRAM_TOKEN=
+TELEGRAM_DEFAULT_CHAT_ID=
+
+PORT=
 ```
 
 이후에 다음 명령어를 통해 개발서버를 실행합니다.
 
 ```
-npm run dev
+yarn dev
 ```
 
-개발서버는 프론트엔드 서버와 백엔드 서버가 동시에 `npm-run-all`로 실행되며, 프론트는 rollup을 통해 hot reloading이 되고, 백엔드는 nodemon을 통해 hot reloading이 됩니다.
+frontend 혹은 backend 서버만 개별적으로 실행하려면 아래 커맨드를 실행합니다.
+
+```
+yarn dev:frontend
+yarn dev:backend
+```
 
 ## Build
 
 ```
-npm run build
+yarn build
 ```
 
 ## Deploy
 
-배포는 본 저장소에 커밋시 travis를 통해 heroku로 배포됩니다.
+배포는 본 저장소에 커밋시 github actions를 통해 heroku로 배포됩니다.
 
 ## 개발후기
 
