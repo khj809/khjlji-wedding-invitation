@@ -1,0 +1,56 @@
+table:
+  name: Reservations
+  schema: public
+object_relationships:
+  - name: gift
+    using:
+      foreign_key_constraint_on: giftId
+  - name: user
+    using:
+      foreign_key_constraint_on: userId
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      set:
+        userId: x-hasura-User-Id
+      columns:
+        - giftId
+        - text
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - giftId
+        - id
+        - text
+        - userId
+        - createdAt
+      filter: {}
+      allow_aggregations: true
+  - role: user
+    permission:
+      columns:
+        - createdAt
+        - giftId
+        - id
+        - text
+        - userId
+      filter: {}
+      allow_aggregations: true
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - text
+      filter:
+        userId:
+          _eq: X-Hasura-User-Id
+      check: {}
+delete_permissions:
+  - role: user
+    permission:
+      backend_only: false
+      filter:
+        userId:
+          _eq: X-Hasura-User-Id

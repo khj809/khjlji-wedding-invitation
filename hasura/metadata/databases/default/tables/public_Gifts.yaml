@@ -1,0 +1,30 @@
+table:
+  name: Gifts
+  schema: public
+object_relationships:
+  - name: reservation
+    using:
+      manual_configuration:
+        column_mapping:
+          id: giftId
+        insertion_order: null
+        remote_table:
+          name: Reservations
+          schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - id
+        - image
+        - link
+        - name
+      filter: {}
+  - role: user
+    permission:
+      columns:
+        - id
+        - image
+        - link
+        - name
+      filter: {}

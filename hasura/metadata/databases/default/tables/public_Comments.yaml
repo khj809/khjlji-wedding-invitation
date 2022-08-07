@@ -1,0 +1,48 @@
+table:
+  name: Comments
+  schema: public
+object_relationships:
+  - name: user
+    using:
+      foreign_key_constraint_on: userId
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      set:
+        userId: x-hasura-User-Id
+      columns:
+        - text
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - createdAt
+        - id
+        - text
+        - userId
+      filter: {}
+  - role: user
+    permission:
+      columns:
+        - id
+        - text
+        - userId
+        - createdAt
+      filter: {}
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - text
+      filter:
+        userId:
+          _eq: X-Hasura-User-Id
+      check: {}
+delete_permissions:
+  - role: user
+    permission:
+      backend_only: false
+      filter:
+        userId:
+          _eq: X-Hasura-User-Id
