@@ -48,4 +48,5 @@ yarn build
 
 ## 개발후기
 
-https://onsealeatang.gitbook.io/khjlji-wedding-invitation/
+- 초기 개발후기: https://onsealeatang.gitbook.io/khjlji-wedding-invitation/
+- v2 개발후기: https://onsealeatang.gitbook.io/khjlji-wedding-invitation-v2/
