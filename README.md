@@ -1,6 +1,6 @@
 # 김해준 임정임 모바일청첩장 프로젝트
 
-https://khjlji-wedding-invitation.herokuapp.com/
+https://khjlji-wedding-invitation.vercel.app/
 
 ## Setup
 
@@ -14,7 +14,7 @@ yarn
 
 ```
 HASURA_GRAPHQL_ENDPOINT=
-HASURA_ADMIN_SECRET=
+HASURA_GRAPHQL_ADMIN_SECRET=
 HASURA_JWT_SECRET_KEY=
 
 TELEGRAM_TOKEN=
@@ -44,7 +44,7 @@ yarn build
 
 ## Deploy
 
-배포는 본 저장소에 커밋시 github actions를 통해 heroku로 배포됩니다.
+배포는 본 저장소에 커밋시 vercel로 배포됩니다.
 
 ## 개발후기
 

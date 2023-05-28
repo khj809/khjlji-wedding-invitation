@@ -1,7 +1,4 @@
 SET check_function_bodies = false;
-CREATE SCHEMA heroku_ext;
-CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA heroku_ext;
-COMMENT ON EXTENSION pgcrypto IS 'cryptographic functions';
 CREATE TABLE public."Comments" (
     id text DEFAULT gen_random_uuid() NOT NULL,
     text text NOT NULL,

@@ -27,3 +27,5 @@ dist-ssr
 
 # custom
 data/
+.vercel
+.yarn/cache
